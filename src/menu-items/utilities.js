@@ -29,7 +29,7 @@ const utilities = {
             id: 'util-warehouse',
             title: 'Warehouse',
             type: 'item',
-            url: '/typography',
+            url: '/warehouse',
             icon: icons.BarcodeOutlined
         }
         // {

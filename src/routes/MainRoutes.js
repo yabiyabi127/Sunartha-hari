@@ -11,8 +11,9 @@ const DashboardDefault = Loadable(lazy(() => import('pages/dashboard')));
 const SamplePage = Loadable(lazy(() => import('pages/extra-pages/SamplePage')));
 
 // render - utilities
-const Typography = Loadable(lazy(() => import('pages/components-overview/Typography')));
+const Typography = Loadable(lazy(() => import('pages/components-overview/Warehouse')));
 const WarehouseDetail = Loadable(lazy(() => import('pages/components-overview/WarehouseDetail')));
+const Warehouse = Loadable(lazy(() => import('pages/components-overview/Warehouse')));
 const Color = Loadable(lazy(() => import('pages/components-overview/Color')));
 const Shadow = Loadable(lazy(() => import('pages/components-overview/Shadow')));
 const AntIcons = Loadable(lazy(() => import('pages/components-overview/AntIcons')));
@@ -25,7 +26,7 @@ const MainRoutes = {
     children: [
         {
             path: '/',
-            element: <Typography />
+            element: <Warehouse />
         },
         {
             path: 'warehouse-detail/:id',
@@ -40,8 +41,8 @@ const MainRoutes = {
             element: <Shadow />
         },
         {
-            path: 'typography',
-            element: <Typography />
+            path: 'warehouse',
+            element: <Warehouse />
         },
         {
             path: 'icons/ant',

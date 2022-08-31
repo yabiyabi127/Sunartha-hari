@@ -24,8 +24,7 @@ import { getDatas } from 'httprequest/_httprequest';
 //     { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 }
 // ];
 
-const ComponentTypography = () => {
-    // const [ListData, setListData] = useState();
+const Warehouse = () => {
     const [ListData, setListData] = useState([]);
     const loadData = () => {
         getDatas().then((res) => {
@@ -102,4 +101,4 @@ const ComponentTypography = () => {
     );
 };
 
-export default ComponentTypography;
+export default Warehouse;
